@@ -5,6 +5,8 @@ gems1 = Gems()
 gems2 = Gems()
 
 for i, color in enumerate(['black', 'white', 'green', 'blue', 'red', 'gold', 'pearl'], 0):
+    print(i)
     setattr(gems1, color, i)
     setattr(gems2, color, 0)
+    print("gems1", gems1)
 print(gems1 - gems2)
